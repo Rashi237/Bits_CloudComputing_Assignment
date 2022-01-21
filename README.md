@@ -1,6 +1,5 @@
 # Bits_CloudComputing_Assignment
-This is the repository for BITS Pilani Batch for cloud computing assignment 
-CloudComputing Assignment
+This is the repository for BITS Pilani Batch for Cloud Computing Assignment 
 -------------------------
 Due Feb 5 by 23:59
 Points 20 
