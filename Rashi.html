@@ -3,166 +3,199 @@
 <head>
   <title>Rashi Chaudhary</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-        integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.css">
   <link rel="stylesheet" href="src/profile_style.css">
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-          crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="src/email.js"></script>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="https://bits-pilani-wilp.ac.in/">
-      <img src="https://bits-pilani-wilp.ac.in/assets/images/logo.png" alt="BITS WILP" width="180" height="60"
-           class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ashish.html">Ashish Ranjan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Sandya.html">Sandya Shanmugham</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="Rashi.html">Rashi Chaudhary</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Ritu.html">Ritu Bala Rai</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://bits-pilani-wilp.ac.in/">
+        <img src="https://bits-pilani-wilp.ac.in/assets/images/logo.png" alt="BITS WILP" width="180" height="60"
+          class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ashish.html">Ashish Ranjan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sandya.html">Sandya Shanmugham</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Rashi.html">Rashi Chaudhary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Ritu.html">Ritu Bala Rai</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="container" style="margin-top: 20px; margin-bottom: 20px;">
-  <div class="row justify-content-center">
-    <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
-      <div class="card border-0 shadow">
-        <img src="https://cloudcomputingassignmentassets.s3.ap-south-1.amazonaws.com/assets/Rashi.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCmFwLXNvdXRoLTEiRzBFAiAeIHKvj1YwbyCMPbIc1Rmzh5QVLn4pxXsb2SV9%2FkScPgIhAIgQuYPPoAY3vr%2B4h0oVfNQbNFFuhy%2BdDql%2FMfB9AFmeKuQCCHAQABoMNjQ5NjYyODgxNzU0IgwmxeSqGb1nTTRYh6MqwQIEAeQ9isROGy28gFAmtNueiqTz%2FDlBbeUyyAXhuC6onYsSwd1MdCwUJ4P3eyMUxhAs%2FE3kUudZyZwLwCRVvuxy2uzFQiQIKgWx19pO5DOI68G3kE9WWScLOpsQyYgiqU9S5vbp%2FWNY2Hd0ULXKHAKi5UV1J7vecYm6DqaVQGEUH1z8oSIxS9MN8t1aa0DwacTILmXdzFIvEz%2Br2H76QbsiCYLn5JOZw8X8NglTL%2FNrRk8UZblkN45GZaldJBStHJLETTexRBgQf6HljdK0B23ukZkOgiyh5sS0TyZ4bg6dnb3imVmEiP4KgnirPP7tCmOpbtC4CJtn%2FYv5TWGodqQthL8uepO6CkMl4Ez2mdCQHpVhMq6gjgAY0ph2Qw4us8z47MLdzxnm%2BKb5qjetm8u5ubA1jpMRWTvJ3%2Bi0ZI3dh%2FYwx%2FLtjwY6swI40kfALWxb%2FgtjduZ3IE4NCxQdMpLuLSXmmXM%2BQXZ5yxyT3XTjgOsmF8iqvE1gmMQCbabjEqNwe3ejmTxhcCGbql1hix30QAhtXxXzgX65ZP2E7rEJJgsfFfGtnbrzE6z38%2BvREI6DPRtdioEsg29QMyOd4l6%2Fcv1uvrEIht9rrkrzEu8jktaioZjFWPIyTauBGtBr0lVHrbLl54dlNdQ%2BUSZnlJ6spxWtzyO0ENe9zm4V3f0QQitfX5UfvLW7VEon6VBYr7ngD3Ftx37YQePYisZ1qjB78bxsxK5XpyrAd3QFvySA5RIm9vZ7C%2BZL2wpEyU5YrRgxhcpzWFItQ826lZCu%2F6GBe1Z%2F8xEnvDGw%2FXRngX57OqtSoKdZhJUhH0K68zF9LDTahLT5t%2BKx0TnUMstB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220203T072127Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=ASIAZOQXM37NK2DK7UFP%2F20220203%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=da96b142fd2524dc34ecd3514a2ebc54a2dc6dddc06037d4a0af2da0c609a7a4" alt="...">
-        <div class="card-body p-1-9 p-xl-5">
-          <div class="mb-4">
-            <h3 class="h4 mb-0">Rashi Chaudhary</h3>
-            <span class="text-primary">Full Stack Engineer</span>
+  <div class="container" style="margin-top: 20px; margin-bottom: 20px;">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
+        <div class="card border-0 shadow">
+          <img
+            src="https://cloudcomputingassignmentassets.s3.ap-south-1.amazonaws.com/assets/Rashi.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCmFwLXNvdXRoLTEiRzBFAiAeIHKvj1YwbyCMPbIc1Rmzh5QVLn4pxXsb2SV9%2FkScPgIhAIgQuYPPoAY3vr%2B4h0oVfNQbNFFuhy%2BdDql%2FMfB9AFmeKuQCCHAQABoMNjQ5NjYyODgxNzU0IgwmxeSqGb1nTTRYh6MqwQIEAeQ9isROGy28gFAmtNueiqTz%2FDlBbeUyyAXhuC6onYsSwd1MdCwUJ4P3eyMUxhAs%2FE3kUudZyZwLwCRVvuxy2uzFQiQIKgWx19pO5DOI68G3kE9WWScLOpsQyYgiqU9S5vbp%2FWNY2Hd0ULXKHAKi5UV1J7vecYm6DqaVQGEUH1z8oSIxS9MN8t1aa0DwacTILmXdzFIvEz%2Br2H76QbsiCYLn5JOZw8X8NglTL%2FNrRk8UZblkN45GZaldJBStHJLETTexRBgQf6HljdK0B23ukZkOgiyh5sS0TyZ4bg6dnb3imVmEiP4KgnirPP7tCmOpbtC4CJtn%2FYv5TWGodqQthL8uepO6CkMl4Ez2mdCQHpVhMq6gjgAY0ph2Qw4us8z47MLdzxnm%2BKb5qjetm8u5ubA1jpMRWTvJ3%2Bi0ZI3dh%2FYwx%2FLtjwY6swI40kfALWxb%2FgtjduZ3IE4NCxQdMpLuLSXmmXM%2BQXZ5yxyT3XTjgOsmF8iqvE1gmMQCbabjEqNwe3ejmTxhcCGbql1hix30QAhtXxXzgX65ZP2E7rEJJgsfFfGtnbrzE6z38%2BvREI6DPRtdioEsg29QMyOd4l6%2Fcv1uvrEIht9rrkrzEu8jktaioZjFWPIyTauBGtBr0lVHrbLl54dlNdQ%2BUSZnlJ6spxWtzyO0ENe9zm4V3f0QQitfX5UfvLW7VEon6VBYr7ngD3Ftx37YQePYisZ1qjB78bxsxK5XpyrAd3QFvySA5RIm9vZ7C%2BZL2wpEyU5YrRgxhcpzWFItQ826lZCu%2F6GBe1Z%2F8xEnvDGw%2FXRngX57OqtSoKdZhJUhH0K68zF9LDTahLT5t%2BKx0TnUMstB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220203T072127Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=ASIAZOQXM37NK2DK7UFP%2F20220203%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=da96b142fd2524dc34ecd3514a2ebc54a2dc6dddc06037d4a0af2da0c609a7a4"
+            alt="...">
+          <div class="card-body p-1-9 p-xl-5">
+            <div class="mb-4">
+              <h3 class="h4 mb-0" id="name">Rashi Chaudhary</h3>
+              <span class="text-primary">Full Stack Engineer</span>
+            </div>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-3"><i class="far fa-envelope display-25 me-3 text-secondary"></i><a href="#!"
+                  id="email">rashi.chaudhary@cognizant.com</a>
+              </li>
+              <li class="mb-3"><a href="#!"><i class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>+91
+                  7204391164</a>
+              </li>
+              <li><a href="#!"><i class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>Bangalore,
+                  Karnataka</a></li>
+            </ul>
+            <ul class="social-icon-style2 ps-0">
+              <li><a href="https://github.com/Rashi237" class="rounded-3 social-custom"><i
+                    class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/rashi-chaudhary-0160846a/" class="rounded-3 social-custom"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+            </ul>
           </div>
-          <ul class="list-unstyled mb-4">
-            <li class="mb-3"><a href="#!"><i
-                    class="far fa-envelope display-25 me-3 text-secondary"></i>rashi.chaudhary@cognizant.com</a>
-            </li>
-            <li class="mb-3"><a href="#!"><i
-                    class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>+91 7204391164</a>
-            </li>
-            <li><a href="#!"><i
-                    class="fas fa-map-marker-alt display-25 me-3 text-secondary"></i>Bangalore, Karnataka</a></li>
-          </ul>
-          <ul class="social-icon-style2 ps-0">
-            <li><a href="https://github.com/Rashi237" class="rounded-3 social-custom"><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/rashi-chaudhary-0160846a/" class="rounded-3 social-custom"><i class="fab fa-linkedin-in"></i></a></li>
-          </ul>
+        </div>
+        <div class="card border-0 shadow" style="margin-top: 3rem;">
+          <div class="card-body p-1-9 p-xl-5">
+            <h2 class="h1 mb-0 text-primary" style="margin-bottom: 1rem!important;">#Contact Me</h2>
+            <form id="contactForm" method="post">
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="nameInput">
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">You'll receive a copy of the email in your inbox.
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Message</span>
+                <textarea rows="5" class="form-control" id="messageInput"></textarea>
+              </div>
+              <center><button type="button" class="btn btn-primary" onclick="submitToAPI(event)">Send
+                  Email</button>
+              </center>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-lg-8">
-      <div class="ps-lg-1-6 ps-xl-5">
-        <div class="mb-5 wow fadeIn">
-          <div class="text-start mb-1-6 wow fadeIn">
-            <h2 class="h1 mb-0 text-primary">#About Me</h2>
+      <div class="col-lg-8">
+        <div class="ps-lg-1-6 ps-xl-5">
+          <div class="mb-5 wow fadeIn">
+            <div class="text-start mb-1-6 wow fadeIn">
+              <h2 class="h1 mb-0 text-primary">#About Me</h2>
+            </div>
+            <p>I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so
+              I have something to strive towards. I'm not comfortable with settling, and I'm always looking for an
+              opportunity to do better and achieve greatness.</p>
           </div>
-          <p >I am ambitious and driven. I thrive on challenge and constantly set goals for myself, so
-            I have something to strive towards. I'm not comfortable with settling, and I'm always looking for an
-            opportunity to do better and achieve greatness.</p>
-        </div>
-        <div class="mb-5 wow fadeIn">
-          <div class="text-start mb-1-6 wow fadeIn">
-            <h2 class="mb-0 text-primary">#Education</h2>
-          </div>
-          <div class="row mt-n4">
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
-                  <i class="ti-bookmark-alt icon-box medium rounded-3 mb-4"></i>
-                  <h3 class="h5 mb-3">Education</h3>
-                  <p class="mb-0">Dr. A.P.J. Abdul Kalam Technical University - B.Tech in Computer Science & Engineering</p>
+          <div class="mb-5 wow fadeIn">
+            <div class="text-start mb-1-6 wow fadeIn">
+              <h2 class="mb-0 text-primary">#Education</h2>
+            </div>
+            <div class="row mt-n4">
+              <div class="col-sm-6 col-xl-4 mt-4">
+                <div class="card text-center border-0 rounded-3">
+                  <div class="card-body">
+                    <i class="ti-bookmark-alt icon-box medium rounded-3 mb-4"></i>
+                    <h3 class="h5 mb-3">Education</h3>
+                    <p class="mb-0">Dr. A.P.J. Abdul Kalam Technical University - B.Tech in Computer Science &
+                      Engineering</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4 mt-4">
+                <div class="card text-center border-0 rounded-3">
+                  <div class="card-body">
+                    <i class="ti-pencil-alt icon-box medium rounded-3 mb-4"></i>
+                    <h3 class="h5 mb-3">Career Start</h3>
+                    <p class="mb-0">Started as Software Engineer in UST Global
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xl-4 mt-4">
+                <div class="card text-center border-0 rounded-3">
+                  <div class="card-body">
+                    <i class="ti-medall-alt icon-box medium rounded-3 mb-4"></i>
+                    <h3 class="h5 mb-3">Experience</h3>
+                    <p class="mb-0">More than 8 years of experience working as a Software Engineer</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
-                  <i class="ti-pencil-alt icon-box medium rounded-3 mb-4"></i>
-                  <h3 class="h5 mb-3">Career Start</h3>
-                  <p class="mb-0">Started as Software Engineer in UST Global
-                  </p>
+          </div>
+          <div class="wow fadeIn">
+            <div class="text-start mb-1-6 wow fadeIn">
+              <h2 class="mb-0 text-primary">#Skills &amp; Experience</h2>
+            </div>
+            <p class="mb-4">Extensively worked as Java Developer on AGILE Projects. Strong experience on various
+              technologies
+              such as Rabbit MQ, Eureka Server, Zuul, Zipkin & Sleuth. Experience in continuous Integration and
+              deployment
+              for java projects, combining tools like Rally, SVN, Jenkins, GIT, Bitbucket, JIRA , PCF, AWS and GCP.
+              I am a quick learner having good analytical skills and adaptable to new situations and challenges</p>
+            <div class="progress-style1">
+              <div class="progress-text">
+                <div class="row">
+                  <div class="col-6 fw-bold">Java ,Microservices</div>
+                  <div class="col-6 text-end">80%</div>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6 col-xl-4 mt-4">
-              <div class="card text-center border-0 rounded-3">
-                <div class="card-body">
-                  <i class="ti-medall-alt icon-box medium rounded-3 mb-4"></i>
-                  <h3 class="h5 mb-3">Experience</h3>
-                  <p class="mb-0">More than 8 years of experience working as a Software Engineer</p>
+              <div class="custom-progress progress rounded-3 mb-4">
+                <div class="animated custom-bar progress-bar slideInLeft" style="width:80%" aria-valuemax="100"
+                  aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
+              </div>
+              <div class="progress-text">
+                <div class="row">
+                  <div class="col-6 fw-bold">Spring Boot</div>
+                  <div class="col-6 text-end">90%</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="wow fadeIn">
-          <div class="text-start mb-1-6 wow fadeIn">
-            <h2 class="mb-0 text-primary">#Skills &amp; Experience</h2>
-          </div>
-          <p class="mb-4">Extensively worked as Java Developer on AGILE Projects. Strong experience on various technologies
-            such as Rabbit MQ, Eureka Server, Zuul, Zipkin & Sleuth. Experience in continuous Integration and deployment
-            for java projects, combining tools like Rally, SVN, Jenkins, GIT, Bitbucket, JIRA , PCF, AWS and GCP.
-            I am a quick learner having good analytical skills and adaptable to new situations and challenges</p>
-          <div class="progress-style1">
-            <div class="progress-text">
-              <div class="row">
-                <div class="col-6 fw-bold">Java ,Microservices</div>
-                <div class="col-6 text-end">80%</div>
+              <div class="custom-progress progress rounded-3 mb-4">
+                <div class="animated custom-bar progress-bar bg-secondary slideInLeft" style="width:90%"
+                  aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
               </div>
-            </div>
-            <div class="custom-progress progress rounded-3 mb-4">
-              <div class="animated custom-bar progress-bar slideInLeft" style="width:80%"
-                   aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" role="progressbar"></div>
-            </div>
-            <div class="progress-text">
-              <div class="row">
-                <div class="col-6 fw-bold">Spring Boot</div>
-                <div class="col-6 text-end">90%</div>
+              <div class="progress-text">
+                <div class="row">
+                  <div class="col-6 fw-bold">Cloud</div>
+                  <div class="col-6 text-end">80%</div>
+                </div>
               </div>
-            </div>
-            <div class="custom-progress progress rounded-3 mb-4">
-              <div class="animated custom-bar progress-bar bg-secondary slideInLeft" style="width:90%"
-                   aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
-            </div>
-            <div class="progress-text">
-              <div class="row">
-                <div class="col-6 fw-bold">Cloud</div>
-                <div class="col-6 text-end">80%</div>
+              <div class="custom-progress progress rounded-3">
+                <div class="animated custom-bar progress-bar bg-dark slideInLeft" style="width:80%" aria-valuemax="100"
+                  aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
               </div>
-            </div>
-            <div class="custom-progress progress rounded-3">
-              <div class="animated custom-bar progress-bar bg-dark slideInLeft" style="width:80%"
-                   aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 
 </html>

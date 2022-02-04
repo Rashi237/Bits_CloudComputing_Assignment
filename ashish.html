@@ -12,6 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="src/email.js"></script>
 </head>
 
 <body>
@@ -50,15 +52,16 @@
         <div class="row justify-content-center">
             <div class="col-md-7 col-lg-4 mb-5 mb-lg-0 wow fadeIn">
                 <div class="card border-0 shadow">
-                    <img src="https://cloudcomputingassignmentassets.s3.ap-south-1.amazonaws.com/assets/ashish.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCmFwLXNvdXRoLTEiRzBFAiAeIHKvj1YwbyCMPbIc1Rmzh5QVLn4pxXsb2SV9%2FkScPgIhAIgQuYPPoAY3vr%2B4h0oVfNQbNFFuhy%2BdDql%2FMfB9AFmeKuQCCHAQABoMNjQ5NjYyODgxNzU0IgwmxeSqGb1nTTRYh6MqwQIEAeQ9isROGy28gFAmtNueiqTz%2FDlBbeUyyAXhuC6onYsSwd1MdCwUJ4P3eyMUxhAs%2FE3kUudZyZwLwCRVvuxy2uzFQiQIKgWx19pO5DOI68G3kE9WWScLOpsQyYgiqU9S5vbp%2FWNY2Hd0ULXKHAKi5UV1J7vecYm6DqaVQGEUH1z8oSIxS9MN8t1aa0DwacTILmXdzFIvEz%2Br2H76QbsiCYLn5JOZw8X8NglTL%2FNrRk8UZblkN45GZaldJBStHJLETTexRBgQf6HljdK0B23ukZkOgiyh5sS0TyZ4bg6dnb3imVmEiP4KgnirPP7tCmOpbtC4CJtn%2FYv5TWGodqQthL8uepO6CkMl4Ez2mdCQHpVhMq6gjgAY0ph2Qw4us8z47MLdzxnm%2BKb5qjetm8u5ubA1jpMRWTvJ3%2Bi0ZI3dh%2FYwx%2FLtjwY6swI40kfALWxb%2FgtjduZ3IE4NCxQdMpLuLSXmmXM%2BQXZ5yxyT3XTjgOsmF8iqvE1gmMQCbabjEqNwe3ejmTxhcCGbql1hix30QAhtXxXzgX65ZP2E7rEJJgsfFfGtnbrzE6z38%2BvREI6DPRtdioEsg29QMyOd4l6%2Fcv1uvrEIht9rrkrzEu8jktaioZjFWPIyTauBGtBr0lVHrbLl54dlNdQ%2BUSZnlJ6spxWtzyO0ENe9zm4V3f0QQitfX5UfvLW7VEon6VBYr7ngD3Ftx37YQePYisZ1qjB78bxsxK5XpyrAd3QFvySA5RIm9vZ7C%2BZL2wpEyU5YrRgxhcpzWFItQ826lZCu%2F6GBe1Z%2F8xEnvDGw%2FXRngX57OqtSoKdZhJUhH0K68zF9LDTahLT5t%2BKx0TnUMstB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220203T072521Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=ASIAZOQXM37NK2DK7UFP%2F20220203%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=e2eec6bc89223a4f1a0fd85529cfa34685e1b1558168fa6b0895aec96d480a1e" alt="...">
+                    <img src="https://cloudcomputingassignmentassets.s3.ap-south-1.amazonaws.com/assets/ashish.jpg?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDcaCmFwLXNvdXRoLTEiRzBFAiAeIHKvj1YwbyCMPbIc1Rmzh5QVLn4pxXsb2SV9%2FkScPgIhAIgQuYPPoAY3vr%2B4h0oVfNQbNFFuhy%2BdDql%2FMfB9AFmeKuQCCHAQABoMNjQ5NjYyODgxNzU0IgwmxeSqGb1nTTRYh6MqwQIEAeQ9isROGy28gFAmtNueiqTz%2FDlBbeUyyAXhuC6onYsSwd1MdCwUJ4P3eyMUxhAs%2FE3kUudZyZwLwCRVvuxy2uzFQiQIKgWx19pO5DOI68G3kE9WWScLOpsQyYgiqU9S5vbp%2FWNY2Hd0ULXKHAKi5UV1J7vecYm6DqaVQGEUH1z8oSIxS9MN8t1aa0DwacTILmXdzFIvEz%2Br2H76QbsiCYLn5JOZw8X8NglTL%2FNrRk8UZblkN45GZaldJBStHJLETTexRBgQf6HljdK0B23ukZkOgiyh5sS0TyZ4bg6dnb3imVmEiP4KgnirPP7tCmOpbtC4CJtn%2FYv5TWGodqQthL8uepO6CkMl4Ez2mdCQHpVhMq6gjgAY0ph2Qw4us8z47MLdzxnm%2BKb5qjetm8u5ubA1jpMRWTvJ3%2Bi0ZI3dh%2FYwx%2FLtjwY6swI40kfALWxb%2FgtjduZ3IE4NCxQdMpLuLSXmmXM%2BQXZ5yxyT3XTjgOsmF8iqvE1gmMQCbabjEqNwe3ejmTxhcCGbql1hix30QAhtXxXzgX65ZP2E7rEJJgsfFfGtnbrzE6z38%2BvREI6DPRtdioEsg29QMyOd4l6%2Fcv1uvrEIht9rrkrzEu8jktaioZjFWPIyTauBGtBr0lVHrbLl54dlNdQ%2BUSZnlJ6spxWtzyO0ENe9zm4V3f0QQitfX5UfvLW7VEon6VBYr7ngD3Ftx37YQePYisZ1qjB78bxsxK5XpyrAd3QFvySA5RIm9vZ7C%2BZL2wpEyU5YrRgxhcpzWFItQ826lZCu%2F6GBe1Z%2F8xEnvDGw%2FXRngX57OqtSoKdZhJUhH0K68zF9LDTahLT5t%2BKx0TnUMstB&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220203T072521Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=ASIAZOQXM37NK2DK7UFP%2F20220203%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=e2eec6bc89223a4f1a0fd85529cfa34685e1b1558168fa6b0895aec96d480a1e"
+                        alt="...">
                     <div class="card-body p-1-9 p-xl-5">
                         <div class="mb-4">
-                            <h3 class="h4 mb-0">Ashish Ranjan</h3>
+                            <h3 class="h4 mb-0" id="name">Ashish Ranjan</h3>
                             <span class="text-primary">Associate - Projects</span>
                         </div>
                         <ul class="list-unstyled mb-4">
-                            <li class="mb-3"><a href="#!"><i
-                                        class="far fa-envelope display-25 me-3 text-secondary"></i>ashish.ranjan7@cognizant.com</a>
+                            <li class="mb-3"><i class="far fa-envelope display-25 me-3 text-secondary"></i>
+                                <a href="#!" id="email">ashish.ranjan7@cognizant.com</a>
                             </li>
                             <li class="mb-3"><a href="#!"><i
                                         class="fas fa-mobile-alt display-25 me-3 text-secondary"></i>+91 707710 2679</a>
@@ -68,9 +71,35 @@
                                     Greater Noida, UP</a></li>
                         </ul>
                         <ul class="social-icon-style2 ps-0">
-                            <li><a href="https://github.com/ashishgamer" class="rounded-3 social-custom"><i class="fab fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/ashish-ranjan-88720024/" class="rounded-3 social-custom"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/ashishgamer" class="rounded-3 social-custom"><i
+                                        class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/ashish-ranjan-88720024/"
+                                    class="rounded-3 social-custom"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
+                    </div>
+                </div>
+                <div class="card border-0 shadow" style="margin-top: 3rem;">
+                    <div class="card-body p-1-9 p-xl-5">
+                        <h2 class="h1 mb-0 text-primary" style="margin-bottom: 1rem!important;">#Contact Me</h2>
+                        <form id="contactForm" method="post">
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput">
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailInput" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">You'll receive a copy of the email in your inbox.
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Message</span>
+                                <textarea rows="5" class="form-control" id="messageInput"></textarea>
+                            </div>
+                            <center><button type="button" class="btn btn-primary" onclick="submitToAPI(event)">Send
+                                    Email</button>
+                            </center>
+                        </form>
                     </div>
                 </div>
             </div>
